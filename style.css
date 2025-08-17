@@ -12,8 +12,10 @@ body {
   justify-content: center;
   align-items: center;
   min-height: 100vh;
+  padding: 20px; /* extra padding for small devices */
 }
 
+/* Force the card to stay centered on all devices */
 .profile-card {
   background: #ffffff;
   border-radius: 20px;
@@ -21,8 +23,9 @@ body {
   padding: 40px 30px;
   text-align: center;
   max-width: 350px;
-  width: 90%;
+  width: 100%;
   transition: transform 0.3s ease;
+  margin: auto;  /* ✅ important for iPad & mobile centering */
 }
 
 .profile-card:hover {
